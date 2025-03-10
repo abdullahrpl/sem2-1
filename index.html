@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style/promo.css" />
+    <link rel="stylesheet" href="src/output.css" />
+    <title>Home - Abbasy Fast Food Asli Berau</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <nav
+        class="bg-white fixed w-full max-[767px]:h-[80px] h-[90px] z-50 top-0 start-0 shadow-md flex justify-center"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between max-[767px]:mx-auto w-full"
+        >
+          <a
+            href="#top"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <h1
+              class="self-center max-[767px]:text-4xl max-[767px]:ml-[15px] lg:text-[50px] md:text-4xl md:ml-[10px] lg:ml-[20px] font-semibold font-['SuperFoods'] whitespace-nowrap text-[#FBA518]"
+            >
+              ABBASY <span class="text-[#E52020]">YAM!</span>
+            </h1>
+          </a>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:mr-[10px] lg:mr-[20px]"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  href="menu.html"
+                  class="underline-hover block py-2 px-3 lg:text-[19px] md:text-[17px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+                  >Menu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="service.html"
+                  class="underline-hover block py-2 px-3 lg:text-[19px] md:text-[17px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="promo.html"
+                  class="underline-hover block py-2 px-3 lg:text-[19px] md:text-[17px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+                  >Promo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="underline-hover2 block py-2 px-3 lg:text-[19px] md:text-[17px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#E52020]"
+                  >Discover Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div id="btnhp" class="nvhp hidden max-[767px]:inline mr-[50px] text-3xl text-[#E52020]">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </div>
+    </nav>
+
+    <!-- navbar hp -->
+    <nav id="nvhp" class="w-screen mt-[70px] fixed z-50 shadow-lg bg-white hidden md:hidden">
+      <div class="items-center justify-between w-full text-center" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white shadow-md shadow-gray-500/50"
+        >
+          <li>
+            <a
+              href="menu.html"
+              class="underline-hover block py-2 px-3 text-xl my-[10px] text-gray-900 rounded-sm font-['MochiyPopOne']"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a
+              href="service.html"
+              class="underline-hover block py-2 px-3 text-xl my-[10px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="promo.html"
+              class="underline-hover block py-2 px-3 text-xl my-[10px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+              >Promo</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="underline-hover2 block py-2 px-3 text-xl my-[10px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#E52020]"
+              >Discover Us</a
+            >
+          </li>
+          <li>
+            <a
+              id="btnclose"
+              class="underline-hover mt-[30px] block py-2 px-3 text-xl text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518] cursor-pointer"
+              >Close</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero w-screen h-[90%]">
+      <div
+        id="default-carousel"
+        class="w-full h-[500px] mt-[10px] max-[767px]:mt-0"
+        data-carousel="slide"
+      >
+        <div class="relative flex h-full overflow-hidden">
+          <div class="h-full flex justify-center items-center" data-carousel-item>
+            <img
+              src="https://asset.kompas.com/crops/dJ6juHNfurURWuXvaqPXge-977c=/53x36:933x623/1200x800/data/photo/2021/10/21/6171492e1ea12.jpg"
+              class="w-full h-full object-cover object-center"
+              alt="Slide 1"
+            />
+            <!-- paijnd -->
+          </div>
+          <div class="h-full flex justify-center items-center" data-carousel-item>
+            <img
+              src="https://cdn1-production-images-kly.akamaized.net/t-5v1HvJYuewL0WK8Yuup9lvjDc=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4043722/original/069195300_1654489583-crispy-fried-chicken-plate-with-salad-carrot.jpg"
+              class="w-full h-full object-cover object-center"
+              alt="Slide 2"
+            />
+          </div>
+          <div class="h-full flex justify-center items-center" data-carousel-item>
+            <img
+              src="https://cdn0-production-images-kly.akamaized.net/03WDZ6v-KvDbZ7dzajEAO2iy_SE=/800x450/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/970871/original/021248500_1440846143-header_chiantilvpa_com.jpg"
+              class="w-full h-full object-cover object-center"
+              alt="Slide 3"
+            />
+          </div>
+          <div class="h-full flex justify-center items-center" data-carousel-item>
+            <img
+              src="https://www.masakapahariini.com/wp-content/uploads/2023/03/shutterstock_1949306203.jpg"
+              class="w-full h-full object-cover object-center"
+              alt="Slide 4"
+            />
+          </div>
+          <div class="h-full flex justify-center items-center" data-carousel-item>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-full h-full object-cover object-center"
+              alt="Slide 5"
+            />
+          </div>
+        </div>
+        <div class="z-30 space-x-3 mx-auto w-screen flex items-center rtl:space-x-reverse justify-center mt-[50px]">
+          <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="0" aria-current="true"></button>
+          <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="4"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENUHIGHLIGHT -->
+    <section
+      class="menuhighlight w-screen h-[50%] mt-[200px] flex justify-center items-center xl:mb-10 md:mb-[150px]"
+    >
+      <div
+        class="highlightwrap flex flex-wrap gap-10 md:gap-28 justify-center max-[767px]:grid max-[767px]:grid-cols-2"
+      >
+        <a
+          href="menu.html#burger"
+          class="menu-item group relative w-32 h-32 md:w-56 md:h-56 rounded-full overflow-hidden bg-white shadow-lg flex items-center justify-center transition-transform duration-300 hover:scale-110 cursor-pointer"
+        >
+          <img
+          src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="burger"
+          class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg md:text-3xl font-semibold opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            Burger
+          </div>
+        </a>
+
+        <a
+          href="menu.html#ayam"
+          class="menu-item group relative w-32 h-32 md:w-56 md:h-56 rounded-full overflow-hidden bg-white shadow-lg flex items-center justify-center transition-transform duration-300 hover:scale-110 cursor-pointer"
+        >
+          <img
+          src="https://images.unsplash.com/photo-1566918214014-a3b3e0132267?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="ayam"
+          class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg md:text-3xl font-semibold opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            Ayam
+          </div>
+        </a>
+
+        <a
+          href="menu.html#minuman"
+          class="menu-item group relative w-32 h-32 md:w-56 md:h-56 rounded-full overflow-hidden bg-white shadow-lg flex items-center justify-center transition-transform duration-300 hover:scale-110 cursor-pointer"
+        >
+          <img
+          src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?q=80&w=2899&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="minuman"
+          class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg md:text-3xl font-semibold opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            Minuman
+          </div>
+        </a>
+
+        <a
+          href="menu.html#paket"
+          class="menu-item group relative w-32 h-32 md:w-56 md:h-56 rounded-full overflow-hidden bg-white shadow-lg flex items-center justify-center transition-transform duration-300 hover:scale-110 cursor-pointer"
+        >
+          <img
+          src="https://plus.unsplash.com/premium_photo-1700061779800-6b4aa3361595?q=80&w=3395&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="paket"
+          class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg md:text-3xl font-semibold opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            Paket
+          </div>
+        </a>
+      </div>
+      `
+    </section>
+
+    <!-- MOMENSPESIAL -->
+    <section class="MOMENSPESIAL w-screen mt-[100px] h-auto md:h-[500px] lg:h-[610px] bg-[#FBA518] flex flex-col md:flex-row overflow-hidden">
+      <div class="kiri w-full md:w-[50%] h-auto md:h-full flex justify-center items-center relative py-10 md:py-0">
+        <div class="kotakwrap w-full h-full flex flex-col md:flex-row items-center justify-center gap-6 md:gap-4 lg:gap-0">
+          <div
+            class="kotak w-[200px] h-[250px] md:w-[220px] md:h-[280px] lg:w-[290px] lg:h-[350px] bg-[#E52020] shadow-2xl drop-shadow-xl rounded-lg transform md:rotate-[-8deg] lg:rotate-[-12deg] transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 overflow-hidden md:absolute md:top-[10%] md:left-[5%] lg:left-[7%]"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Ulang Tahun"
+              class="w-full h-full object-cover"
+            />
+          </div>
+    
+          <div
+            class="kotak w-[250px] h-[200px] md:w-[280px] md:h-[220px] lg:w-[350px] lg:h-[290px] bg-[#E52020] shadow-2xl drop-shadow-xl rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 overflow-hidden md:absolute md:top-[25%] md:left-[30%] lg:left-[30%]"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Minum Bersama"
+              class="w-full h-full object-cover"
+            />
+          </div>
+    
+          <div
+            class="kotak w-[200px] h-[200px] md:w-[220px] md:h-[220px] lg:w-[290px] lg:h-[290px] bg-[#E52020] shadow-2xl drop-shadow-xl rounded-lg transform md:rotate-8 lg:rotate-12 transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 overflow-hidden md:absolute md:top-[10%] md:left-[55%] lg:left-[60%]"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Pesta Ulang Tahun"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    
+      <div class="kanan w-full md:w-[50%] h-auto md:h-full flex items-center justify-center text-black text-center py-10 md:py-0">
+        <div class="tulisanwrap">
+          <h2
+            class="text-4xl md:text-4xl lg:text-5xl max-[767px]:text-3xl font-['MochiyPopOne'] leading-[60px] md:leading-[60px] lg:leading-[80px] max-[767px]:leading-[45px]"
+          >
+            Rayakan Momen <br />
+            Spesialmu di <br class="hidden max-[767px]:inline" /><span
+              class="font-semibold text-[50px] md:text-[50px] lg:text-[65px] max-[767px]:text-4xl font-['SuperFoods'] text-[#E52020]"
+            >
+              ABBASY <span class="text-[#E52020]">YAM!</span>
+            </span>
+          </h2>
+    
+          <a
+            href="#"
+            class="inline-block mt-6 px-6 py-3 bg-[#E52020] text-white text-lg md:text-lg lg:text-xl font-semibold rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105"
+          >
+            Pelajari Lebih Lanjut
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REKOMENDASI -->
+    <section class="rekomendasi w-full h-full py-16 flex flex-col items-center">
+      <h2
+        class="text-4xl font-bold text-center mt-[70px] mb-10 font-['MochiyPopOne'] tracking-wider"
+      >
+        Rekomendasi
+      </h2>
+    
+      <div class="flex flex-row justify-center my-auto gap-12 w-[90%] flex-wrap">
+        <a
+          href="menu.html#burger"
+          class="group w-72 h-[500px] bg-[#B8001F] rounded-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-lg cursor-pointer"
+        >
+          <div class="h-[70%] bg-gray-300">
+            <img
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Burger Cheese"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="h-[30%] p-4 flex flex-col justify-center text-center">
+            <h3
+              class="text-xl font-semibold mb-[25px] font-['MochiyPopOne'] text-white"
+            >
+              Burger Cheese
+            </h3>
+            <p
+              class="text-sm text-white opacity-80 leading-relaxed transition-opacity duration-300 group-hover:opacity-100 font-semibold"
+            >
+              Burger lezat dengan daging yang juicy dan rasa yang cheesy.
+            </p>
+          </div>
+        </a>
+    
+        <a
+          href="menu.html#ayam"
+          class="group w-72 h-[500px] bg-[#B8001F] rounded-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-lg cursor-pointer"
+        >
+          <div class="h-[70%] bg-gray-300">
+            <img
+              src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Ayam Geprek"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="h-[30%] p-4 flex flex-col justify-center text-center">
+            <h3
+              class="text-xl font-semibold mb-[25px] font-['MochiyPopOne'] text-white"
+            >
+              Ayam Geprek
+            </h3>
+            <p
+              class="text-sm text-white opacity-80 leading-relaxed transition-opacity duration-300 group-hover:opacity-100 font-semibold"
+            >
+              Ayam goreng geprek dengan rasa pedas yang tajam dan meresap.
+            </p>
+          </div>
+        </a>
+    
+        <a
+          href="menu.html#paket"
+          class="group w-72 h-[500px] bg-[#B8001F] rounded-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-lg cursor-pointer"
+        >
+          <div class="h-[70%] bg-gray-300">
+            <img
+              src="https://statik.tempo.co/data/2024/12/11/id_1361226/1361226_720.jpg"
+              alt="Kenyang Mabar"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="h-[30%] p-4 flex flex-col justify-center text-center">
+            <h3
+              class="text-xl font-semibold mb-[25px] font-['MochiyPopOne'] text-white"
+            >
+              Kenyang Mabar
+            </h3>
+            <p
+              class="text-sm text-white opacity-80 leading-relaxed transition-opacity duration-300 group-hover:opacity-100 font-semibold"
+            >
+              Paket ayam pedas yang sangat enak dan nikmat.
+            </p>
+          </div>
+        </a>
+    
+        <a
+          href="menu.html#minuman"
+          class="group w-72 h-[500px] bg-[#B8001F] rounded-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-lg cursor-pointer"
+        >
+          <div class="h-[70%] bg-gray-300">
+            <img
+              src="https://images.unsplash.com/photo-1584362339083-17c40cf19364?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Susu Kurma"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="h-[30%] p-4 flex flex-col justify-center text-center">
+            <h3
+              class="text-xl font-semibold mb-[25px] font-['MochiyPopOne'] text-white"
+            >
+              Susu Kurma
+            </h3>
+            <p
+              class="text-sm text-white opacity-80 leading-relaxed transition-opacity duration-300 group-hover:opacity-100 font-semibold"
+            >
+              Minuman dingin yang menyegarkan dengan rasa kurma yang nikmat.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="relative bg-[#B8001F] text-white py-16 px-6 2xl:mt-[200px] shadow-[0px_-10px_20px_rgba(0,0,0,0.4)] "
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left"
+      >
+        <div class="md:w-1/3 mb-8 md:mb-0">
+          <h3 class="text-5xl font-bold font-['SuperFoods'] tracking-wide">
+            ABBASY YAM!
+          </h3>
+          <p class="mt-[70px] text-lg max-[767px]:mt-[30px]">
+            +62 821 2141 3131
+          </p>
+          <p class="text-lg">support@abbasyyam.com</p>
+        </div>
+
+        <div class="md:w-1/3 flex flex-col items-center">
+          <h3
+            class="text-5xl font-bold font-['SuperFoods'] tracking-wide max-[767px]:mt-[50px]"
+          >
+            MEDIA SOSIAL
+          </h3>
+          <div class="flex space-x-5 mt-[70px] max-[767px]:mt-[30px]">
+            <a
+              href="#"
+              class="w-14 h-14 group bg-white rounded-full text-3xl flex items-center justify-center hover:bg-[#FBA518] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+              <i
+                class="fa fa-instagram text-[#B8001F] group-hover:text-white duration-300 transition-all"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a
+              href="#"
+              class="w-14 h-14 group bg-white rounded-full text-3xl flex items-center justify-center hover:bg-[#FBA518] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+              <i
+                class="fa fa-facebook-f text-[#B8001F] group-hover:text-white duration-300 transition-all"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a
+              href="#"
+              class="w-14 h-14 group bg-white rounded-full text-3xl flex items-center justify-center hover:bg-[#FBA518] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+              <i
+                class="fa fa-whatsapp text-[#B8001F] group-hover:text-white duration-300 transition-all"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a
+              href="#"
+              class="w-14 h-14 group bg-white rounded-full text-3xl flex items-center justify-center hover:bg-[#FBA518] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+              <i
+                class="fa fa-youtube text-[#B8001F] group-hover:text-white duration-300 transition-all"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="md:w-1/3 flex flex-col items-center md:items-end">
+          <h3
+            class="text-5xl font-bold font-['SuperFoods'] tracking-wide max-[767px]:mt-[50px]"
+          >
+            NAVIGASI
+          </h3>
+          <div class="flex space-x-6 mt-[50px]">
+            <a
+              href="#"
+              class="relative w-[170px] h-[80px] bg-white rounded-md flex items-center justify-center text-[#B8001F] text-xl font-bold hover:bg-[#FBA518] transition-all duration-300 group overflow-hidden"
+            >
+              <span
+                class="relative z-10 transition-transform duration-300 group-hover:-translate-x-4"
+                >Home</span
+              >
+              <i
+                class="fa fa-arrow-right absolute right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              ></i>
+            </a>
+            <a
+              href="#"
+              class="relative w-[170px] h-[80px] bg-white rounded-md flex items-center justify-center text-[#B8001F] text-xl font-bold hover:bg-[#FBA518] transition-all duration-300 group overflow-hidden"
+            >
+              <span
+                class="relative z-10 transition-transform duration-300 group-hover:-translate-x-4"
+                >Menu</span
+              >
+              <i
+                class="fa fa-arrow-right absolute right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

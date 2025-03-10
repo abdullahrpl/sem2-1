@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style/login.css" />
+    <link rel="stylesheet" href="src/output.css" />
+    <title>Login - Abbasy Yam!</title>
+  </head>
+  <body class="bg-gradient-to-r from-[#FBA518] to-[#E52020]">
+    <section class="min-h-screen flex items-center justify-center p-6">
+      <div class="w-full max-w-4xl bg-white/20 backdrop-blur-lg rounded-3xl shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+        <div class="hidden lg:flex items-center justify-center p-12 bg-gradient-to-r from-[#FBA518] to-[#E52020]">
+          <div class="text-center">
+            <h2 class="text-4xl font-bold text-white font-['MochiyPopOne']">
+              Welcome Back!
+            </h2>
+            <p class="mt-4 text-lg text-white/80">
+              Login to continue exploring delicious offers and exclusive deals.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bagian Kanan (Form Login) -->
+        <div class="p-8 sm:p-12">
+          <div class="text-center lg:text-left">
+            <h1 class="text-3xl font-bold text-[#E52020] font-['MochiyPopOne']">
+              Login
+            </h1>
+            <p class="mt-2 text-gray-600">
+              Enter your details to access your account.
+            </p>
+          </div>
+
+          <form action="menu.html" class="mt-8 space-y-6">
+            <div>
+              <label
+                for="username"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Username
+              </label>
+              <div class="mt-1 relative">
+                <input
+                  required
+                  type="text"
+                  id="username"
+                  name="username"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white/50 backdrop-blur-sm focus:ring-2 focus:ring-[#E52020] focus:border-[#E52020] outline-none transition-all"
+                  placeholder="Username"
+                />
+                <i class="fa fa-envelope absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+              </div>
+            </div>
+
+            <div>
+              <label
+                for="password"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Password
+              </label>
+              <div class="mt-1 relative">
+                <input
+                  required
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white/50 backdrop-blur-sm focus:ring-2 focus:ring-[#E52020] focus:border-[#E52020] outline-none transition-all"
+                  placeholder="Enter your password"
+                />
+                <i class="fa fa-lock absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <label for="remember" class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="remember"
+                  name="remember"
+                  class="size-5 rounded border-gray-300 text-[#E52020] focus:ring-[#E52020]"
+                />
+                <span class="ml-2 text-sm text-gray-700">Remember me</span>
+              </label>
+              <a
+                href="#"
+                class="text-sm text-[#E52020] hover:underline"
+              >
+                Forgot password?
+              </a>
+            </div>
+
+            <div>
+              <button
+                onclick="login()"
+                type="submit"
+                class="w-full bg-gradient-to-r from-[#FBA518] to-[#E52020] text-white px-6 py-3 rounded-lg font-semibold hover:bg-gradient-to-l hover:shadow-lg transition-all"
+              >
+                Login
+              </button>
+            </div>
+
+            <div class="relative">
+              <div class="absolute inset-0 flex items-center">
+                <div class="w-full border-t border-gray-300"></div>
+              </div>
+              <div class="relative flex justify-center text-sm">
+                <span class="px-2 bg-white text-gray-500">Or continue with</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <button
+                type="button"
+                class="flex items-center justify-center gap-2 bg-white border border-gray-300 px-4 py-3 rounded-lg hover:bg-gray-50 transition-all"
+              >
+                <i class="fa fa-google text-[#E52020]"></i>
+                <span class="text-sm font-medium text-gray-700">Google</span>
+              </button>
+              <button
+                type="button"
+                class="flex items-center justify-center gap-2 bg-white border border-gray-300 px-4 py-3 rounded-lg hover:bg-gray-50 transition-all"
+              >
+                <i class="fa fa-facebook text-[#1877F2]"></i>
+                <span class="text-sm font-medium text-gray-700">Facebook</span>
+              </button>
+            </div>
+
+            <div class="text-center">
+              <p class="text-sm text-gray-600">
+                Don't have an account?
+                <a
+                  href="#"
+                  class="text-[#E52020] hover:underline"
+                >
+                  Sign up
+                </a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      function login() {
+          const password = document.getElementById("password").value;
+          const username = document.getElementById("username").value;
+          console.log(username)
+          localStorage.setItem('username', username);
+      }
+  </script>
+  </body>
+</html>
