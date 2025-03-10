@@ -1,0 +1,14 @@
+@font-face 
+{
+  font-family: 'SuperFoods';
+  src: url('../font/SuperFoods-2OxXo.ttf');
+}
+@font-face 
+{
+  font-family: 'MochiyPopOne';
+  src: url('../font/MochiyPopOne-Regular.ttf');
+}
+
+html{
+  scroll-behavior: smooth;
+}

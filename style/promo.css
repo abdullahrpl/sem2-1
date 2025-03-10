@@ -1,0 +1,84 @@
+@font-face 
+{
+  font-family: 'SuperFoods';
+  src: url('../font/SuperFoods-2OxXo.ttf');
+}
+@font-face 
+{
+  font-family: 'MochiyPopOne';
+  src: url('../font/MochiyPopOne-Regular.ttf');
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* konten */
+.underline-tetap::after {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #FBA518;
+  transition: width 0.3s ease, left 0.3s ease;
+  max-width: 50%;
+}
+
+.underline-hover {
+  position: relative;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #FBA518;
+  transition: width 0.3s ease, left 0.3s ease;
+  max-width: 50%;
+}
+
+.underline-hover:hover::after {
+  width: 50%;
+  left: 25%;
+}
+
+.underline-hover2 {
+  position: relative;
+}
+
+.underline-hover2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  border-radius: 20px;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #E52020;
+  transition: width 0.3s ease, left 0.3s ease;
+  max-width: 50%;
+}
+
+.underline-hover2:hover::after {
+  width: 50%;
+  left: 25%;
+}
+
+.kategori-item {
+  border: 2px solid #e52020;
+  color: #e52020;
+  background-color: transparent;
+}
+
+.kategori-item.active {
+  background-color: #e52020;
+  color: white;
+  border: 2px solid #e52020;
+}

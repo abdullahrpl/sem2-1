@@ -1,0 +1,101 @@
+/* FONT */
+@font-face {
+  font-family: 'SuperFoods';
+  src: url('../font/SuperFoods-2OxXo.ttf');
+}
+
+@font-face {
+  font-family: 'MochiyPopOne';
+  src: url('../font/MochiyPopOne-Regular.ttf');
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.underline-tetap::after {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #FBA518;
+  transition: width 0.3s ease, left 0.3s ease;
+  max-width: 50%;
+}
+
+.underline-hover {
+  position: relative;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #FBA518;
+  transition: width 0.3s ease, left 0.3s ease;
+  max-width: 50%;
+}
+
+.underline-hover:hover::after {
+  width: 50%;
+  left: 25%;
+}
+
+.underline-hover2 {
+  position: relative;
+}
+
+.underline-hover2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  border-radius: 20px;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #E52020;
+  transition: width 0.3s ease, left 0.3s ease;
+  max-width: 50%;
+}
+
+.underline-hover2:hover::after {
+  width: 50%;
+  left: 25%;
+}
+
+.kategori-item {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
+  font-family: 'MochiyPopOne', sans-serif;
+  border-radius: 8px;
+  color: white;
+  background-color: #FBA518;
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.kategori-item:hover {
+  background-color: #E52020;
+}
+
+.kategori-item.active {
+  background-color: #E52020;
+  pointer-events: none;
+}
+
+.kategori-section {
+  margin-bottom: 100px;
+  padding: 50px 20px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

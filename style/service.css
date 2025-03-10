@@ -1,0 +1,68 @@
+@font-face 
+{
+  font-family: 'SuperFoods';
+  src: url('../font/SuperFoods-2OxXo.ttf');
+}
+@font-face 
+{
+  font-family: 'MochiyPopOne';
+  src: url('../font/MochiyPopOne-Regular.ttf');
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.underline-hover {
+    position: relative;
+  }
+  .underline-hover::after {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #FBA518;
+    transition: width 0.3s ease, left 0.3s ease;
+    max-width: 50%;
+  }
+  .underline-hover:hover::after {
+    width: 50%;
+    left: 25%;
+  }
+  
+  .underline-hover2 {
+    position: relative;
+  }
+  .underline-hover2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    border-radius: 20px;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #E52020;
+    transition: width 0.3s ease, left 0.3s ease;
+    max-width: 50%;
+  }
+  .underline-hover2:hover::after {
+    width: 50%;
+    left: 25%;
+  }
+
+  .btn-animate {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-animate:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #d61c1c; /* Warna lebih gelap saat hover */
+  }
+  
+  .btn-animate:active {
+    transform: scale(0.95);
+  }
