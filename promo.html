@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style/promo.css" />
+    <link rel="stylesheet" href="src/output.css" />
+    <title>Promo - Abbasy Yam!</title>
+  </head>
+  <body>
+    <nav
+      class="bg-white fixed w-full max-[767px]:h-[80px] h-[90px] z-50 top-0 start-0 shadow-md flex justify-center"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between max-[767px]:mx-auto w-full"
+      >
+        <a
+          href="index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <h1
+            class="self-center max-[767px]:text-4xl max-[767px]:ml-[15px] lg:text-[50px] md:text-4xl md:ml-[10px] lg:ml-[20px] font-semibold font-['SuperFoods'] whitespace-nowrap text-[#FBA518]"
+          >
+            ABBASY <span class="text-[#E52020]">YAM!</span>
+          </h1>
+        </a>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:mr-[10px] lg:mr-[20px]"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href="menu.html"
+                class="underline-hover block py-2 px-3 lg:text-[19px] md:text-[17px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="service.html"
+                class="underline-hover block py-2 px-3 lg:text-[19px] md:text-[17px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="underline-hover block py-2 px-3 lg:text-[19px] md:text-[17px] text-[#FBA518] rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+                >Promo</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="underline-hover2 block py-2 px-3 lg:text-[19px] md:text-[17px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#E52020]"
+                >Discover Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          id="btnhp"
+          class="nvhp hidden max-[767px]:inline mr-[50px] text-3xl text-[#E52020]"
+        >
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBARHP -->
+    <nav
+      id="nvhp"
+      class="w-screen mt-[-70px] fixed z-50 shadow-lg bg-white hidden md:hidden"
+    >
+      <div
+        class="items-center justify-between w-full text-center"
+        id="navbar-sticky"
+      >
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white shadow-md shadow-gray-500/50"
+        >
+          <li>
+            <a
+              href="menu.html"
+              class="underline-hover block py-2 px-3 text-xl my-[10px] text-gray-900 rounded-sm font-['MochiyPopOne']"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a
+              href="service.html"
+              class="underline-hover block py-2 px-3 text-xl my-[10px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="underline-hover block py-2 px-3 text-xl my-[10px] text-[#FBA518] rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+              >Promo</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="underline-hover2 block py-2 px-3 text-xl my-[10px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#E52020]"
+              >Discover Us</a
+            >
+          </li>
+          <li>
+            <a
+              id="btnclose"
+              class="underline-hover mt-[30px] block py-2 px-3 text-xl text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518] cursor-pointer"
+              >Close</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- KONTEN -->
+    <section class="konten w-screen h-auto mt-[90px]">
+      <!-- Kategori -->
+      <div class="kategori w-full h-auto mt-[150px]">
+        <div
+          class="kategori-items w-full h-auto mx-auto flex flex-wrap justify-center gap-4 px-4"
+        >
+          <div
+            id="kategori-semua"
+            class="kategori-item active w-full sm:w-auto h-[60px] rounded-md flex justify-center items-center cursor-pointer bg-gray-100 hover:bg-[#FBA518] hover:text-white transition-all"
+            onclick="filterCards('semua')"
+          >
+            <h2 class="text-xl font-['MochiyPopOne'] px-[20px]">Semua</h2>
+          </div>
+
+          <div
+            id="kategori-store"
+            class="kategori-item w-full sm:w-auto h-[60px] rounded-md flex justify-center items-center cursor-pointer bg-gray-100 hover:bg-[#FBA518] hover:text-white transition-all"
+            onclick="filterCards('store')"
+          >
+            <h2 class="text-xl font-['MochiyPopOne'] px-[20px]">Store</h2>
+          </div>
+
+          <div
+            id="kategori-monthly"
+            class="kategori-item w-full sm:w-auto h-[60px] rounded-md flex justify-center items-center cursor-pointer bg-gray-100 hover:bg-[#FBA518] hover:text-white transition-all"
+            onclick="filterCards('monthly')"
+          >
+            <h2 class="text-xl font-['MochiyPopOne'] px-[20px]">Monthly</h2>
+          </div>
+
+          <div
+            id="kategori-hemat"
+            class="kategori-item w-full sm:w-auto h-[60px] rounded-md flex justify-center items-center cursor-pointer bg-gray-100 hover:bg-[#FBA518] hover:text-white transition-all"
+            onclick="filterCards('hemat')"
+          >
+            <h2 class="text-xl font-['MochiyPopOne'] px-[20px]">Hemat</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapcards w-full h-auto mt-[100px] px-4">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mx-auto max-w-screen-xl"
+        >
+          <div
+            class="bg-white shadow-lg rounded-lg p-4 transition-all hover:-translate-y-2"
+            id="card"
+            data-category="store"
+          >
+            <div class="w-full h-32 rounded-lg">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1661953124283-76d0a8436b87?q=80&w=3576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Promo 4"
+                class="w-full h-32 object-cover rounded-lg"
+              />
+            </div>
+            <p class="text-red-500 font-semibold mt-3">Store</p>
+            <h2 class="text-xl font-bold text-gray-900">Lorem Ipsum</h2>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Lorem Ipsum dolar sit amet<br />
+              Lorem Ipsum dolar sit amets vs
+            </p>
+            <div class="flex items-center text-gray-500 text-sm mt-3">
+              <span class="text-red-500 text-lg">❌</span>
+              <span class="ml-2">01 Februari 2025 - 01 April 2025</span>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-lg rounded-lg p-4 transition-all hover:-translate-y-2"
+            id="card"
+            data-category="monthly"
+          >
+            <div class="w-full h-32 rounded-lg">
+              <img
+                src="https://images.unsplash.com/photo-1633526543814-9718c8922b7a?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Promo 4"
+                class="w-full h-32 object-cover rounded-lg"
+              />
+            </div>
+            <p class="text-red-500 font-semibold mt-3">Monthly</p>
+            <h2 class="text-xl font-bold text-gray-900">Lorem Ipsum</h2>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Lorem Ipsum dolar sit amet<br />
+              Lorem Ipsum dolar sit amets vs
+            </p>
+            <div class="flex items-center text-gray-500 text-sm mt-3">
+              <span class="text-red-500 text-lg">❌</span>
+              <span class="ml-2">01 Februari 2025 - 01 April 2025</span>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-lg rounded-lg p-4 transition-all hover:-translate-y-2"
+            id="card"
+            data-category="hemat"
+          >
+            <div class="w-full h-32 rounded-lg">
+              <img
+                src="https://images.unsplash.com/photo-1607082349566-187342175e2f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Promo 4"
+                class="w-full h-32 object-cover rounded-lg"
+              />
+            </div>
+            <p class="text-red-500 font-semibold mt-3">Hemat</p>
+            <h2 class="text-xl font-bold text-gray-900">Lorem Ipsum</h2>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Lorem Ipsum dolar sit amet<br />
+              Lorem Ipsum dolar sit amets vs
+            </p>
+            <div class="flex items-center text-gray-500 text-sm mt-3">
+              <span class="text-red-500 text-lg">❌</span>
+              <span class="ml-2">01 Februari 2025 - 01 April 2025</span>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-lg rounded-lg p-4 transition-all hover:-translate-y-2"
+            id="card"
+            data-category="store"
+          >
+            <div class="w-full h-32 rounded-lg">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1661953124283-76d0a8436b87?q=80&w=3576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Promo 4"
+                class="w-full h-32 object-cover rounded-lg"
+              />
+            </div>
+            <p class="text-red-500 font-semibold mt-3">Store</p>
+            <h2 class="text-xl font-bold text-gray-900">Lorem Ipsum</h2>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Lorem Ipsum dolar sit amet<br />
+              Lorem Ipsum dolar sit amets vs
+            </p>
+            <div class="flex items-center text-gray-500 text-sm mt-3">
+              <span class="text-red-500 text-lg">❌</span>
+              <span class="ml-2">01 Februari 2025 - 01 April 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQS -->
+    <section
+      class="faq w-screen max-[767px]:h-auto sm:h-auto xl:h-[400px] mt-[200px]"
+    >
+      <div class="space-y-4 w-[50%] mx-auto my-auto">
+        <details
+          class="group border-s-10 border-[#FBA518] bg-[#E52020] p-6 [&_summary::-webkit-details-marker]:hidden"
+          close
+        >
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5"
+          >
+            <h2 class="text-lg font-medium text-white font-['MochiyPopOne']">
+              Lorem ipsum dolor sit amet consectetur adipisicing?
+            </h2>
+
+            <span
+              class="shrink-0 rounded-full bg-[#FBA518] p-1.5 text-gray-900 sm:p-3 dark:text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </summary>
+
+          <p class="mt-4 leading-relaxed text-gray-700 dark:text-gray-200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+            veritatis molestias culpa in, recusandae laboriosam neque aliquid
+            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
+            distinctio corporis earum similique!
+          </p>
+        </details>
+
+        <details
+          class="group border-s-10 border-[#FBA518] bg-[#E52020] p-6 [&_summary::-webkit-details-marker]:hidden"
+          close
+        >
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5"
+          >
+            <h2 class="text-lg font-medium text-white font-['MochiyPopOne']">
+              Lorem ipsum dolor sit amet consectetur adipisicing?
+            </h2>
+
+            <span
+              class="shrink-0 rounded-full bg-[#FBA518] p-1.5 text-gray-900 sm:p-3 dark:text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </summary>
+
+          <p class="mt-4 leading-relaxed text-gray-700 dark:text-gray-200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+            veritatis molestias culpa in, recusandae laboriosam neque aliquid
+            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
+            distinctio corporis earum similique!
+          </p>
+        </details>
+
+        <details
+          class="group border-s-10 border-[#FBA518] bg-[#E52020] p-6 [&_summary::-webkit-details-marker]:hidden"
+          close
+        >
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5"
+          >
+            <h2 class="text-lg font-medium text-white font-['MochiyPopOne']">
+              Lorem ipsum dolor sit amet consectetur adipisicing?
+            </h2>
+
+            <span
+              class="shrink-0 rounded-full bg-[#FBA518] p-1.5 text-gray-900 sm:p-3 dark:text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </summary>
+
+          <p class="mt-4 leading-relaxed text-gray-700 dark:text-gray-200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+            veritatis molestias culpa in, recusandae laboriosam neque aliquid
+            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
+            distinctio corporis earum similique!
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="relative bg-[#B8001F] text-white py-16 px-6 2xl:mt-[200px] xl:mt-[100px] max-[767px]:mt-[300px] sm:mt-[100px] shadow-[0px_-10px_20px_rgba(0,0,0,0.4)]"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left"
+      >
+        <div class="md:w-1/3 mb-8 md:mb-0">
+          <h3 class="text-5xl font-bold font-['SuperFoods'] tracking-wide">
+            ABBASY YAM!
+          </h3>
+          <p class="mt-[70px] text-lg max-[767px]:mt-[30px]">
+            +62 821 2141 3131
+          </p>
+          <p class="text-lg">support@abbasyyam.com</p>
+        </div>
+
+        <div class="md:w-1/3 flex flex-col items-center">
+          <h3
+            class="text-5xl font-bold font-['SuperFoods'] tracking-wide max-[767px]:mt-[50px]"
+          >
+            MEDIA SOSIAL
+          </h3>
+          <div class="flex space-x-5 mt-[70px] max-[767px]:mt-[30px]">
+            <a
+              href="#"
+              class="w-14 h-14 group bg-white rounded-full text-3xl flex items-center justify-center hover:bg-[#FBA518] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+              <i
+                class="fa fa-instagram text-[#B8001F] group-hover:text-white duration-300 transition-all"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a
+              href="#"
+              class="w-14 h-14 group bg-white rounded-full text-3xl flex items-center justify-center hover:bg-[#FBA518] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+              <i
+                class="fa fa-facebook-f text-[#B8001F] group-hover:text-white duration-300 transition-all"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a
+              href="#"
+              class="w-14 h-14 group bg-white rounded-full text-3xl flex items-center justify-center hover:bg-[#FBA518] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+              <i
+                class="fa fa-whatsapp text-[#B8001F] group-hover:text-white duration-300 transition-all"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a
+              href="#"
+              class="w-14 h-14 group bg-white rounded-full text-3xl flex items-center justify-center hover:bg-[#FBA518] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+              <i
+                class="fa fa-youtube text-[#B8001F] group-hover:text-white duration-300 transition-all"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="md:w-1/3 flex flex-col items-center md:items-end">
+          <h3
+            class="text-5xl font-bold font-['SuperFoods'] tracking-wide max-[767px]:mt-[50px]"
+          >
+            NAVIGASI
+          </h3>
+          <div class="flex space-x-6 mt-[50px]">
+            <a
+              href="#"
+              class="relative w-[170px] h-[80px] bg-white rounded-md flex items-center justify-center text-[#B8001F] text-xl font-bold hover:bg-[#FBA518] transition-all duration-300 group overflow-hidden"
+            >
+              <span
+                class="relative z-10 transition-transform duration-300 group-hover:-translate-x-4"
+                >Home</span
+              >
+              <i
+                class="fa fa-arrow-right absolute right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              ></i>
+            </a>
+            <a
+              href="#"
+              class="relative w-[170px] h-[80px] bg-white rounded-md flex items-center justify-center text-[#B8001F] text-xl font-bold hover:bg-[#FBA518] transition-all duration-300 group overflow-hidden"
+            >
+              <span
+                class="relative z-10 transition-transform duration-300 group-hover:-translate-x-4"
+                >Menu</span
+              >
+              <i
+                class="fa fa-arrow-right absolute right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/promo.js"></script>
+  </body>
+</html>

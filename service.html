@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style/service.css" />
+    <link rel="stylesheet" href="src/output.css" />
+    <title>Services - Abbasy Fast Food Asli Berau</title>
+</head>
+<body>
+  <nav
+        class="bg-white fixed w-full max-[767px]:h-[80px] h-[90px] z-50 top-0 start-0 shadow-md flex justify-center"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between max-[767px]:mx-auto w-full"
+        >
+          <a
+            href="index.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <h1
+              class="self-center max-[767px]:text-4xl max-[767px]:ml-[15px] lg:text-[50px] md:text-4xl md:ml-[10px] lg:ml-[20px] font-semibold font-['SuperFoods'] whitespace-nowrap text-[#FBA518]"
+            >
+              ABBASY <span class="text-[#E52020]">YAM!</span>
+            </h1>
+          </a>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:mr-[10px] lg:mr-[20px]"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  href="menu.html"
+                  class="underline-hover block py-2 px-3 lg:text-[19px] md:text-[17px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+                  >Menu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#top"
+                  class="block py-2 px-3 lg:text-[19px] md:text-[17px] text-[#FBA518] rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="promo.html"
+                  class="underline-hover block py-2 px-3 lg:text-[19px] md:text-[17px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+                  >Promo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="underline-hover2 block py-2 px-3 lg:text-[19px] md:text-[17px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#E52020]"
+                  >Discover Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div id="btnhp" class="nvhp hidden max-[767px]:inline mr-[50px] text-3xl text-[#E52020]">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </div>
+  </nav>
+
+  <!-- navbar hp -->
+  <nav id="nvhp" class="w-screen fixed z-50 shadow-lg bg-white hidden md:hidden">
+      <div class="items-center justify-between w-full text-center" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white shadow-md shadow-gray-500/50"
+        >
+          <li>
+            <a
+              href="menu.html"
+              class="underline-hover block py-2 px-3 text-xl my-[10px] text-gray-900 rounded-sm font-['MochiyPopOne']"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a
+              href="service.html"
+              class="block py-2 px-3 text-xl my-[10px] text-[#FBA518] rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="promo.html"
+              class="underline-hover block py-2 px-3 text-xl my-[10px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518]"
+              >Promo</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="underline-hover2 block py-2 px-3 text-xl my-[10px] text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#E52020]"
+              >Discover Us</a
+            >
+          </li>
+          <li>
+            <a
+              id="btnclose"
+              class="underline-hover mt-[30px] block py-2 px-3 text-xl text-gray-900 rounded-sm font-['MochiyPopOne'] hover:text-[#FBA518] cursor-pointer"
+              >Close</a
+            >
+          </li>
+        </ul>
+      </div>
+  </nav> 
+    
+  <!-- HERO -->
+  <section class="hero w-screen h-[300px] md:h-[500px] bg-[#B8001F] mt-[90px] flex justify-center items-center relative overflow-hidden">
+    <!-- Gambar Background -->
+    <img
+      src="https://images.unsplash.com/photo-1511421616335-5a9846f1afcb?q=80&w=3432&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Pelayan Melayani Pelanggan"
+      class="w-full h-full object-cover absolute inset-0 opacity-70"
+    />
+    <!-- Teks di Atas Gambar -->
+    <h1 class="text-center text-2xl md:text-4xl font-['MochiyPopOne'] text-white z-10">Services</h1>
+  </section>
+
+  <!-- content -->
+  <section class="w-screen h-auto md:h-[1200px] mt-[100px] md:mt-[200px]">
+    <h1 class="text-center text-2xl md:text-4xl font-['MochiyPopOne'] text-black my-[30px] md:my-[50px]">In-Store Services</h1>
+  
+    <div class="konten w-screen flex flex-col h-full">
+      <!-- Card Atas -->
+      <div class="atas mt-[50px] md:mt-[100px] w-[90%] md:w-[80%] h-auto md:h-1/2 mx-auto flex flex-col md:flex-row gap-[50px] md:gap-[100px]">
+        <!-- Teks dan Tombol (Desktop) -->
+        <div class="kiri max-[767px]:hidden sm:hidden w-full md:w-1/2 h-full md:flex flex-col justify-center">
+          <h1 class="text-center md:text-right text-2xl md:text-4xl font-['MochiyPopOne'] text-black my-[20px] md:my-[50px]">Dine In & Take Out</h1>
+          <p class="text-center md:text-right text-lg md:text-xl text-black mb-[20px] md:mb-[50px]">Nikmati lezatnya menu <b>Abbasy Yam!</b> di store terdekat atau bisa juga untuk dibawa pulang. Pesan sekarang yuk!</p>
+          <a href="#" class="btn-animate text-center md:ml-auto py-[10px] md:py-[15px] px-[60px] md:px-[80px] bg-[#E52020] text-lg md:text-xl text-white font-['MochiyPopOne'] rounded-md">Cari Toko</a>
+        </div>
+  
+        <!-- Gambar (Desktop dan Mobile) -->
+        <div class="kanan w-full md:w-1/2 h-[300px] md:h-[85%] flex my-auto">
+          <div class="img-atas w-full h-full bg-[#E52020] rounded-xl flex items-center justify-center overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Dine In"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+  
+        <!-- Teks dan Tombol (Mobile) -->
+        <div class="kiri max-[767px]:flex sm:flex md:hidden w-full md:w-1/2 h-full flex flex-col justify-center">
+          <h1 class="text-center md:text-right text-2xl md:text-4xl font-['MochiyPopOne'] text-black my-[20px] md:my-[50px]">Dine In & Take Out</h1>
+          <p class="text-center md:text-right text-lg md:text-xl text-black mb-[20px] md:mb-[50px]">Nikmati lezatnya menu <b>Abbasy Yam!</b> di store terdekat atau bisa juga untuk dibawa pulang. Pesan sekarang yuk!</p>
+          <a href="#" class="btn-animate text-center mx-auto md:ml-auto py-[10px] md:py-[15px] px-[60px] md:px-[80px] bg-[#E52020] text-lg md:text-xl text-white font-['MochiyPopOne'] rounded-md">Cari Toko</a>
+        </div>
+      </div>
+  
+      <!-- Card Bawah -->
+      <div class="bawah mt-[50px] md:mt-[100px] w-[90%] md:w-[80%] h-auto md:h-1/2 mx-auto flex flex-col md:flex-row gap-[50px] md:gap-[100px]">
+        <!-- Gambar (Desktop dan Mobile) -->
+        <div class="kanan w-full md:w-1/2 h-[300px] md:h-[85%] flex my-auto">
+          <div class="img-atas w-full h-full bg-[#E52020] rounded-xl flex items-center justify-center overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Take Out"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+  
+        <!-- Teks dan Tombol -->
+        <div class="kiri w-full md:w-1/2 h-full flex flex-col justify-center">
+          <h1 class="text-center md:text-left text-2xl md:text-4xl font-['MochiyPopOne'] text-black my-[20px] md:my-[50px]">Dine In & Take Out</h1>
+          <p class="text-center md:text-left text-lg md:text-xl text-black mb-[20px] md:mb-[50px]">Nikmati lezatnya menu <b>Abbasy Yam!</b> di store terdekat atau bisa juga untuk dibawa pulang. Pesan sekarang yuk!</p>
+          <a href="#" class="btn-animate text-center max-[767px]:mx-auto md:mr-auto py-[10px] md:py-[15px] px-[60px] md:px-[80px] bg-[#E52020] text-lg md:text-xl text-white font-['MochiyPopOne'] rounded-md">Cari Toko</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- event -->
+  <section class="h-[500px] md:h-[700px] w-screen mt-[100px] md:mt-[300px]">
+    <div class="konten w-[90%] md:w-[80%] h-[80%] my-auto mx-auto bg-[#B8001F] rounded-2xl flex justify-center items-center">
+      <div class="text-konten text-center text-white gap-[30px] md:gap-[50px] flex flex-col">
+        <h1 class="font-['MochiyPopOne'] text-2xl md:text-4xl">Event</h1>
+        <p class="text-lg md:text-xl">"Ayo rekam semua memori spesialmu di <b>Abbasy Yam!</b>"</p>
+      </div>
+      <a href="" class="absolute bottom-[-1340px] md:bottom-[-1950px] text-white text-lg md:text-xl font-['MochiyPopOne'] py-[15px] md:py-[20px] px-[40px] md:px-[50px] bg-[#FBA518] rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 ease-in-out">Selengkapnya</a>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer
+      class="relative bg-[#B8001F] text-white py-16 px-6 2xl:mt-[200px] shadow-[0px_-10px_20px_rgba(0,0,0,0.4)] "
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left"
+      >
+        <div class="md:w-1/3 mb-8 md:mb-0">
+          <h3 class="text-5xl font-bold font-['SuperFoods'] tracking-wide">
+            ABBASY YAM!
+          </h3>
+          <p class="mt-[70px] text-lg max-[767px]:mt-[30px]">
+            +62 821 2141 3131
+          </p>
+          <p class="text-lg">support@abbasyyam.com</p>
+        </div>
+
+        <div class="md:w-1/3 flex flex-col items-center">
+          <h3
+            class="text-5xl font-bold font-['SuperFoods'] tracking-wide max-[767px]:mt-[50px]"
+          >
+            MEDIA SOSIAL
+          </h3>
+          <div class="flex space-x-5 mt-[70px] max-[767px]:mt-[30px]">
+            <a
+              href="#"
+              class="w-14 h-14 group bg-white rounded-full text-3xl flex items-center justify-center hover:bg-[#FBA518] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+              <i
+                class="fa fa-instagram text-[#B8001F] group-hover:text-white duration-300 transition-all"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a
+              href="#"
+              class="w-14 h-14 group bg-white rounded-full text-3xl flex items-center justify-center hover:bg-[#FBA518] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+              <i
+                class="fa fa-facebook-f text-[#B8001F] group-hover:text-white duration-300 transition-all"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a
+              href="#"
+              class="w-14 h-14 group bg-white rounded-full text-3xl flex items-center justify-center hover:bg-[#FBA518] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+              <i
+                class="fa fa-whatsapp text-[#B8001F] group-hover:text-white duration-300 transition-all"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a
+              href="#"
+              class="w-14 h-14 group bg-white rounded-full text-3xl flex items-center justify-center hover:bg-[#FBA518] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+              <i
+                class="fa fa-youtube text-[#B8001F] group-hover:text-white duration-300 transition-all"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="md:w-1/3 flex flex-col items-center md:items-end">
+          <h3
+            class="text-5xl font-bold font-['SuperFoods'] tracking-wide max-[767px]:mt-[50px]"
+          >
+            NAVIGASI
+          </h3>
+          <div class="flex space-x-6 mt-[50px]">
+            <a
+              href="#"
+              class="relative w-[170px] h-[80px] bg-white rounded-md flex items-center justify-center text-[#B8001F] text-xl font-bold hover:bg-[#FBA518] transition-all duration-300 group overflow-hidden"
+            >
+              <span
+                class="relative z-10 transition-transform duration-300 group-hover:-translate-x-4"
+                >Home</span
+              >
+              <i
+                class="fa fa-arrow-right absolute right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              ></i>
+            </a>
+            <a
+              href="#"
+              class="relative w-[170px] h-[80px] bg-white rounded-md flex items-center justify-center text-[#B8001F] text-xl font-bold hover:bg-[#FBA518] transition-all duration-300 group overflow-hidden"
+            >
+              <span
+                class="relative z-10 transition-transform duration-300 group-hover:-translate-x-4"
+                >Menu</span
+              >
+              <i
+                class="fa fa-arrow-right absolute right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <script src="js/service.js"></script>
+</body>
+</html>
