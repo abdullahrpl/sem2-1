@@ -1182,6 +1182,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -1208,6 +1211,12 @@
   }
   .isolation-auto {
     isolation: auto;
+  }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-5 {
+    z-index: 5;
   }
   .z-10 {
     z-index: 10;
@@ -1365,17 +1374,17 @@
   .mt-\[-70px\] {
     margin-top: -70px;
   }
-  .mt-\[50px\] {
-    margin-top: 50px;
-  }
-  .mt-\[90px\] {
-    margin-top: 90px;
-  }
   .mt-\[100px\] {
     margin-top: 100px;
   }
   .mt-\[10px\] {
     margin-top: 10px;
+  }
+  .mt-\[150px\] {
+    margin-top: 150px;
+  }
+  .mt-\[200px\] {
+    margin-top: 200px;
   }
   .mt-\[20px\] {
     margin-top: 20px;
@@ -1383,14 +1392,14 @@
   .mt-\[30px\] {
     margin-top: 30px;
   }
+  .mt-\[50px\] {
+    margin-top: 50px;
+  }
   .mt-\[70px\] {
     margin-top: 70px;
   }
-  .mt-\[150px\] {
-    margin-top: 150px;
-  }
-  .mt-\[200px\] {
-    margin-top: 200px;
+  .mt-\[90px\] {
+    margin-top: 90px;
   }
   .apexcharts-canvas {
     & .apexcharts-tooltip {
@@ -1720,9 +1729,6 @@
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
-  .mb-\[40px\] {
-    margin-bottom: 40px;
-  }
   .mb-\[200px\] {
     margin-bottom: 200px;
   }
@@ -1731,6 +1737,9 @@
   }
   .mb-\[25px\] {
     margin-bottom: 25px;
+  }
+  .mb-\[40px\] {
+    margin-bottom: 40px;
   }
   .apexcharts-xaxistooltip {
     .apexcharts-canvas & {
@@ -1908,6 +1917,9 @@
   .h-\[60px\] {
     height: 60px;
   }
+  .h-\[61\%\] {
+    height: 61%;
+  }
   .h-\[70\%\] {
     height: 70%;
   }
@@ -2045,6 +2057,9 @@
       text-align: center;
     }
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -2072,8 +2087,14 @@
   .w-\[50\%\] {
     width: 50%;
   }
+  .w-\[81\%\] {
+    width: 81%;
+  }
   .w-\[90\%\] {
     width: 90%;
+  }
+  .w-\[150px\] {
+    width: 150px;
   }
   .w-\[170px\] {
     width: 170px;
@@ -2083,6 +2104,9 @@
   }
   .w-\[250px\] {
     width: 250px;
+  }
+  .w-\[300px\] {
+    width: 300px;
   }
   .w-full {
     width: 100%;
@@ -2263,6 +2287,10 @@
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -2619,6 +2647,9 @@
   }
   .justify-items-stretch {
     justify-items: stretch;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
   }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
@@ -3150,6 +3181,9 @@
   .\!bg-gray-50 {
     background-color: var(--color-gray-50) !important;
   }
+  .\!bg-gray-700 {
+    background-color: var(--color-gray-700) !important;
+  }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
   }
@@ -3191,6 +3225,9 @@
   }
   .bg-gray-300 {
     background-color: var(--color-gray-300);
+  }
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
   }
   .bg-gray-900\/50 {
     background-color: color-mix(in oklab, var(--color-gray-900) 50%, transparent);
@@ -3244,6 +3281,9 @@
   .bg-radial {
     --tw-gradient-position: in oklab,;
     background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[url\(\.\.\/image\.png\)\] {
+    background-image: url(../image.png);
   }
   .bg-none {
     background-image: none;
@@ -3502,6 +3542,9 @@
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
@@ -4079,6 +4122,9 @@
   .opacity-0 {
     opacity: 0%;
   }
+  .opacity-60 {
+    opacity: 60%;
+  }
   .opacity-70 {
     opacity: 70%;
   }
@@ -4125,6 +4171,9 @@
   .shadow-sm {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-gray-500 {
+    --tw-shadow-color: var(--color-gray-500);
   }
   .shadow-gray-500\/50 {
     --tw-shadow-color: color-mix(in oklab, var(--color-gray-500) 50%, transparent);
@@ -4685,6 +4734,11 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
+  .max-\[767px\]\:mt-\[50px\] {
+    @media (width < 767px) {
+      margin-top: 50px;
+    }
+  }
   .max-\[767px\]\:mt-\[300px\] {
     @media (width < 767px) {
       margin-top: 300px;
@@ -4693,11 +4747,6 @@
   .max-\[767px\]\:mt-\[30px\] {
     @media (width < 767px) {
       margin-top: 30px;
-    }
-  }
-  .max-\[767px\]\:mt-\[50px\] {
-    @media (width < 767px) {
-      margin-top: 50px;
     }
   }
   .max-\[767px\]\:ml-\[15px\] {

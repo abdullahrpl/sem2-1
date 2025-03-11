@@ -58,7 +58,7 @@ html{
   padding-top: 80px;
 }
 
-[data-carousel-slide-to] {
+.btncarousel{
   background-color: #FBA518; /* Warna default */
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
   width: 12px;
