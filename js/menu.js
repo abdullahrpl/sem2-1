@@ -44,8 +44,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const userLogin = document.getElementById("login-txt");
 const userGet = localStorage.getItem("username");
+const username = document.getElementById("username");
+const profile = document.getElementById("prdiv")
+const overlay = document.getElementById('overlay')
 
 if (userGet) {
   userLogin.href = "#";
   userLogin.textContent = userGet;
+  username.textContent = userGet;
+
+  userLogin.addEventListener("click", () =>{
+    profile.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  })
+
+  profile.addEventListener("click", () =>{
+    profile.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  })
+}
+
+function close() {
+    profile.classList.add("hidden");
+    overlay.classList.add("hidden");
 }

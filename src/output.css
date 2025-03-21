@@ -1365,14 +1365,29 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mt-\[-70px\] {
     margin-top: -70px;
+  }
+  .mt-\[30px\] {
+    margin-top: 30px;
+  }
+  .mt-\[50px\] {
+    margin-top: 50px;
   }
   .mt-\[100px\] {
     margin-top: 100px;
   }
   .mt-\[10px\] {
     margin-top: 10px;
+  }
+  .mt-\[70px\] {
+    margin-top: 70px;
+  }
+  .mt-\[90px\] {
+    margin-top: 90px;
   }
   .mt-\[150px\] {
     margin-top: 150px;
@@ -1382,18 +1397,6 @@
   }
   .mt-\[20px\] {
     margin-top: 20px;
-  }
-  .mt-\[30px\] {
-    margin-top: 30px;
-  }
-  .mt-\[50px\] {
-    margin-top: 50px;
-  }
-  .mt-\[70px\] {
-    margin-top: 70px;
-  }
-  .mt-\[90px\] {
-    margin-top: 90px;
   }
   .apexcharts-canvas {
     & .apexcharts-tooltip {
@@ -1902,6 +1905,9 @@
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
   .h-32 {
     height: calc(var(--spacing) * 32);
   }
@@ -2071,6 +2077,9 @@
   }
   .w-14 {
     width: calc(var(--spacing) * 14);
+  }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
   }
   .w-32 {
     width: calc(var(--spacing) * 32);
@@ -2476,8 +2485,8 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2705,6 +2714,13 @@
       margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .space-x-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .space-x-5 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -2918,6 +2934,10 @@
     border-style: var(--tw-border-style);
     border-width: 0px;
   }
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
   .border-x {
     border-inline-style: var(--tw-border-style);
     border-inline-width: 1px;
@@ -3112,6 +3132,9 @@
       color: white;
     }
   }
+  .border-\[\#E52020\] {
+    border-color: #E52020;
+  }
   .border-\[\#FBA518\] {
     border-color: #FBA518;
   }
@@ -3176,6 +3199,9 @@
   }
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
+  }
+  .bg-\[\#00000063\] {
+    background-color: #00000063;
   }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
@@ -3584,6 +3610,9 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
@@ -3912,9 +3941,6 @@
     .dark .datatable-wrapper .datatable-table thead th& .datatable-sorter {
       color: white;
     }
-  }
-  .text-\[\#1877F2\] {
-    color: #1877F2;
   }
   .text-\[\#B8001F\] {
     color: #B8001F;
@@ -4553,13 +4579,6 @@
       }
     }
   }
-  .hover\:bg-gray-50 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-gray-50);
-      }
-    }
-  }
   .hover\:bg-gray-100 {
     &:hover {
       @media (hover: hover) {
@@ -4571,6 +4590,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-200);
+      }
+    }
+  }
+  .hover\:bg-gray-300 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-300);
       }
     }
   }
@@ -4614,6 +4640,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-gray-600);
+      }
+    }
+  }
+  .hover\:text-gray-700 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-gray-700);
       }
     }
   }
@@ -5321,9 +5354,9 @@
       margin-bottom: calc(var(--spacing) * 10);
     }
   }
-  .xl\:h-\[400px\] {
+  .xl\:h-\[500px\] {
     @media (width >= 80rem) {
-      height: 400px;
+      height: 500px;
     }
   }
   .xl\:grid-cols-4 {
